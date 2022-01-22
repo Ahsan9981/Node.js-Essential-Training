@@ -1,5 +1,6 @@
 const fs = require('fs');
 const readline = require('readline');
+const http = require('http');
 
 
 const rl = readline.createInterface({
@@ -12,7 +13,7 @@ const file = 'posts.txt';
 const postTitle = (process.argv[2] || 'New Blog Post.');
 const postAuthor =  (process.argv[3] || 'Unknown');
 
-rl.question('Enter your blog post', (postContent) => {
+rl.question('Enter your blog post: ', (postContent) => {
 
     const blogEntry = `
     ${'-'.repeat(postTitle.length)}
@@ -33,3 +34,4 @@ rl.question('Enter your blog post', (postContent) => {
     });
     rl.close();
 });
+
