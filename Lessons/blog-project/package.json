@@ -1,0 +1,19 @@
+{
+  "name": "blog-project",
+  "version": "1.0.0",
+  "description": "A very basic blogging setup.",
+  "main": "app.js",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "inquirer": "^8.2.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "add": "node add-post",
+    "view": "node view-posts",
+    "setup": "node setup"
+  },
+  "author": "Ahsan",
+  "license": "ISC"
+}
