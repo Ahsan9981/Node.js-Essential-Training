@@ -12,9 +12,9 @@ db.serialize(() => {
     db.run(statement, (error) => {
         
         if (error) {
-            logger.error(error);
+            logger.error(`An error occured: `, error);
         } else {
-            logger.success(result);
+            logger.success(`Database table ${config.tableName} created successfully.`);
         }
     });
 });
