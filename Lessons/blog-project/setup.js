@@ -17,4 +17,7 @@ db.serialize(() => {
             logger.success(`Database table ${config.tableName} created successfully.`);
         }
     });
+
+    db.close();
 });
+
