@@ -27,7 +27,7 @@ router.post('/hash', (req, res, next) => {
 router.get('/:person/:greetings', (req, res, next) => {
     const name = req.params.person;
     const greetings = req.params.greetings;
-    res.render('hello', { name, greetings });
+    res.render('hello', { name });
 });
 
 module.exports = router;
