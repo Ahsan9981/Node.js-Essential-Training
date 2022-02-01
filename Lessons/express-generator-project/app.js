@@ -26,7 +26,9 @@ app.use('/hello', helloRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  // next(createError(404));
+  // res.status(404).send('This page does not exists.');
+  res.status(404).render('404');
 });
 
 // error handler
